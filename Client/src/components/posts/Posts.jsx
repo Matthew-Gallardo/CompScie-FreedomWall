@@ -1,16 +1,13 @@
+import React from 'react';
 import Post from '../post/Post';
+import './posts.css';
 
-
-import "./posts.css";
-
-export default function Posts() {
+export default function Posts({ posts }) {
   return (
     <div className="posts">
-      <Post img="https://i.imgflip.com/736pg8.jpg?a467472?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-      <Post img="https://i.imgflip.com/736pg8.jpg?a467472?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-      <Post img="https://i.imgflip.com/736pg8.jpg?a467472?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-      <Post img="https://i.imgflip.com/736pg8.jpg?a467472?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-      <Post img="https://i.imgflip.com/736pg8.jpg?a467472?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+      {posts.map((p) => (
+        <Post key={p.id} post={p} />
+      ))}
     </div>
   );
 }
