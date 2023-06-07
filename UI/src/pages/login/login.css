@@ -1,4 +1,4 @@
-.register {
+.login {
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
@@ -8,51 +8,56 @@
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
       ),
-      url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      url("https://res.cloudinary.com/do3op0083/image/upload/v1686040868/corona-g17d12cf3e_1280_tbpozu.jpg");
     background-size: cover;
   }
   
-  .registerTitle {
+  .loginTitle {
     font-size: 50px;
   }
   
-  .registerForm {
+  .loginForm {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
   }
   
-  .registerForm > label {
+  .loginForm > label {
     margin: 10px 0;
   }
   
-  .registerInput {
+  .loginInput {
     padding: 10px;
     background-color: white;
     border: none;
     border-radius: 10px;
   }
   
-  .registerInput:focus {
+  .loginInput:focus {
     outline: none;
   }
   
-  .registerButton {
+  .loginButton {
     margin-top: 20px;
     cursor: pointer;
-    background-color: teal;
+    background-color: lightcoral;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 10px;
     text-align: center;
   }
+  .loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(252, 173, 173);
+  }
   
-  .registerLoginButton {
+  
+  .loginRegisterButton {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: lightcoral;
+    background-color: teal;
     cursor: pointer;
     padding: 10px;
     border: none;

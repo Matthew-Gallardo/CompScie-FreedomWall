@@ -1,4 +1,4 @@
-.login {
+.register {
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
@@ -8,56 +8,51 @@
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
       ),
-      url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+      url("https://res.cloudinary.com/do3op0083/image/upload/v1686040873/code-5290465_1280_rep0ox.jpg");
     background-size: cover;
   }
   
-  .loginTitle {
+  .registerTitle {
     font-size: 50px;
   }
   
-  .loginForm {
+  .registerForm {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
   }
   
-  .loginForm > label {
+  .registerForm > label {
     margin: 10px 0;
   }
   
-  .loginInput {
+  .registerInput {
     padding: 10px;
     background-color: white;
     border: none;
     border-radius: 10px;
   }
   
-  .loginInput:focus {
+  .registerInput:focus {
     outline: none;
   }
   
-  .loginButton {
+  .registerButton {
     margin-top: 20px;
     cursor: pointer;
-    background-color: lightcoral;
+    background-color: teal;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 10px;
     text-align: center;
   }
-  .loginButton:disabled{
-    cursor: not-allowed;
-    background-color: rgb(252, 173, 173);
-  }
   
-  
-  .loginRegisterButton {
+  .registerLoginButton {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: teal;
+    background-color: lightcoral;
     cursor: pointer;
     padding: 10px;
     border: none;

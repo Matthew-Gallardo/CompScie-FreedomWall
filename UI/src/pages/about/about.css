@@ -1,0 +1,15 @@
+.about {
+    padding-top: 55px; /* Add space equal to the height of the navbar */
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://res.cloudinary.com/do3op0083/image/upload/v1686040868/corona-g17d12cf3e_1280_tbpozu.jpg");
+    background-size: cover;
+  }
+  
